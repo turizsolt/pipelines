@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {},
   "scripts" : {
-    "test": "mocha --recursive"
+    "test": "mocha **/*.test.js"
   },
   "devDependencies": {
     "@types/chai": "^4.0.4",
