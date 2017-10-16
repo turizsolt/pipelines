@@ -1,11 +1,13 @@
 import TodoList from "../../core/src/TodoList";
 import InMemoryTodoList from "../../core/src/InMemoryTodoList";
+import {TYPES} from "../../types";
+import {myContainer} from "../../inversify.config";
 
 export default class TodoListController {
     private todoList:TodoList;
 
     constructor() {
-        this.todoList = new InMemoryTodoList();
+        this.todoList = myContainer.get<TodoList>(TYPES.TodoList);
     }
 
     getAll(req, res) {

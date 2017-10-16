@@ -1,5 +1,8 @@
 import TodoList from "./TodoList";
+import {injectable} from "inversify";
+import 'reflect-metadata';
 
+@injectable()
 export default class InMemoryTodoList implements TodoList {
     private storage:string[];
 
