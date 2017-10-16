@@ -5,7 +5,9 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "inversify": "^4.3.0",
-    "reflect-metadata": "^0.1.10"
+    "reflect-metadata": "^0.1.10",
+    "sinon": "^4.0.1",
+    "sinon-chai": "^2.14.0"
   },
   "scripts": {
     "test": "mocha **/*.test.js",
@@ -17,6 +19,8 @@
     "@types/express": "^4.0.37",
     "@types/mocha": "^2.2.43",
     "@types/reflect-metadata": "0.0.5",
+    "@types/sinon": "^2.3.6",
+    "@types/sinon-chai": "^2.7.29",
     "chai": "^4.1.2"
   }
 }
