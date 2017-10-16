@@ -20,7 +20,9 @@ export default class InMemoryTodoList implements TodoList {
         this.storage[id] = null;
     }
 
-    public getAll(): string[] {
-        return this.storage.filter(x => x !== null);
+    public getAll(): {id:number, text:string}[] {
+        return this.storage
+            .map((x, id) => {return {id: id, text: x};} )
+            .filter(x => x.text !== null);
     }
 }
