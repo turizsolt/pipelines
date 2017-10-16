@@ -2,7 +2,7 @@
   "name": "pipelines",
   "version": "0.0.1",
   "dependencies": {
-    "@types/express": "^4.0.37",
+    "body-parser": "^1.18.2",
     "express": "^4.16.2"
   },
   "scripts": {
@@ -10,7 +10,9 @@
     "server": "node http-api/src/server.js"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.16.5",
     "@types/chai": "^4.0.4",
+    "@types/express": "^4.0.37",
     "@types/mocha": "^2.2.43",
     "chai": "^4.1.2"
   }
